@@ -604,6 +604,8 @@ form textarea{
 
 /* till here */
 
+/* blog */
+
 .blogMainContainer{
     width: 100%;
     height: auto;
@@ -615,38 +617,36 @@ form textarea{
     
 }
 
-.blogMainContainer > .permanentHeader{
-    font-size: 3.5rem;
-    font-weight: 900;
-    text-align: start;
-    color: #ffffffc1;
-    width: 65%;
-    padding: 30px 0;
-}
-
 .blogContainer{
-    width: 60%;
-    height: 25vh;
-    background-color: #f2aa4cff;
+    width: 100%;
     display: flex;
-    margin-bottom: 30px;
-    color: #101820ff;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
-.blogImg > Img{
-    width: 250px;
-    height: 25vh;
-    object-fit: cover;
+.blank{
+    width:60%;
+    height: 1px;
+    border:1px solid #aeaeae;
+    border-radius: 50px;
+    background: #aeaeae;
 }
 
-.blogHeading > .blogTitle{
-    font-size: 1.5rem;
+.navigator{
+    width: 60%;
+    display: flex;
+}
+
+.navigator ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
     padding: 0;
-    padding-left: 10px;
-    /* background: green; */
-    font-weight: 900;
 }
 
-.blogInfo{
-    padding: 10px 10px 0px 10px;
+.navigator ul li{
+    list-style-type: none;
 }
