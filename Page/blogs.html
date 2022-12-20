@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Blog</title>
     <link rel="stylesheet" href="/style.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="logo"><a href="/index.html">Grenish</a></div>
@@ -26,27 +28,99 @@
 
     <div class="blogMainContainer">
         <span class="landingText">
-            <h2>Blog</h2>
+            <section id="sec-head">
+                <span class="head">
+                    <h2>Blog</h2>
+                </span>
+                <span class="bottom">
+                    <h3>'s</h3>
+                </span>
+            </section>
         </span>
+
+        <!-- image slider starts here -->
+        <div class="autoImageSlider">
+            <div class="imageSlider">
+                <!-- radio starts from here -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <!-- radio ends here -->
+
+                <!-- slider class from here -->
+                <div class="slider first">
+                    <span class="sliderHeading">
+                        <h2>
+                            <a href="#">Test Subject 1</a>
+                        </h2>
+                    </span>
+                    <img src="/Blogs/animeBlogs.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <span class="sliderHeading">
+                        <h2>
+                            <a href="#">Test Subject 2</a>
+                        </h2>
+                    </span>
+                    <img src="/Blogs/bootstrap.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <span class="sliderHeading">
+                        <h2>
+                            <a href="#">Test Subject 3</a>
+                        </h2>
+                    </span>
+                    <img src="/Blogs/display.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <span class="sliderHeading">
+                        <h2>
+                            <a href="#">Test Subject 4</a>
+                        </h2>
+                    </span>
+                    <img src="/Blogs/iosAndroid.png" alt="">
+                </div>
+                <!-- slider class ends here -->
+
+                <!-- auto navigation starts here -->
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                <!-- auto navigation ends here -->
+            </div>
+            <!-- manual navigation starts here -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation ends here -->
+        </div>
+        <!-- image slider ends here -->
 
         <div class="blogContainer">
             <div class="blank"></div>
-                <div class="navigator">
-                    <ul>
-                        <li>
-                            <a href="#">Tech</a>
-                        </li>
-                        <li>
-                            <a href="#">Writings</a>
-                        </li>
-                        <li>
-                            <a href="#">Courses</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="navigator">
+                <ul>
+                    <li>
+                        <a href="#">Tech</a>
+                    </li>
+                    <li>
+                        <a href="#">Writings</a>
+                    </li>
+                    <li>
+                        <a href="#">Courses</a>
+                    </li>
+                </ul>
+            </div>
             <div class="blank"></div>
 
-            
+
         </div>
     </div>
 
@@ -83,7 +157,7 @@
                     </li>
                     <li>
                         <a href="https://codepen.io/grenish_rai" target="_blank">CodePen</a>
-                    </li>                    
+                    </li>
                 </ul>
             </div>
             <div class="contact">
@@ -99,5 +173,7 @@
         </div>
         <div class="copyright">Grenish @ 2022 | Made with passion</div>
     </footer>
+
+    <script src="/script.js"></script>
 </body>
 </html>
