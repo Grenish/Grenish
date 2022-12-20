@@ -785,3 +785,31 @@ form textarea{
 
 
 /* auto navigation ends here */
+
+
+.blogContent{
+    width: 90%;
+}
+
+.blogContent #navigator, .blogContent #navigator a{
+    color: #ffffff8f;
+}
+
+.card{
+    width: 30%;
+    height: 60vh;
+    background: red;
+    border: 1px solid #000;
+}
+
+.card:not(:last-child){
+    margin-right: 20px;
+    margin-bottom: 20px;
+    /* margin-top: 20px; */
+}
+
+.contents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
