@@ -701,6 +701,7 @@ form textarea{
     position: absolute;
     padding: 10px 20px;
     font-size: 2rem;
+    z-index: 2;
 }
 
 .slider .sliderHeading h2{
@@ -708,7 +709,26 @@ form textarea{
     text-shadow: 2px 2px 3px #000;
 }
 
+@media (max-width: 640px ){
+    .slider .sliderHeading{
+        font-size: 1.5rem;
+        width: 370px;
+    }
+}
+
+
+
 /* blog title ends here */
+
+.focus::after, .focus::before{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: 50%;
+}
 
 /* for manual navigation */
 
@@ -813,3 +833,4 @@ form textarea{
     flex-wrap: wrap;
     justify-content: center;
 }
+
