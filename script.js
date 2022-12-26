@@ -1,3 +1,11 @@
+// preloader
+
+var loader = document.getElementById('preloader');
+
+window.addEventListener('load', ()=>{
+    loader.style.display = 'none';
+});
+
 // hamburger menu 
 
 const toggleButton = document.getElementsByClassName('toggleButton')[0]
