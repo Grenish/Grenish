@@ -609,12 +609,12 @@ form textarea{
 .blogMainContainer{
     width: 100%;
     height: auto;
-    background-color: #101820ff;
+    background-color: #252525;
     justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
 #sec-head{
@@ -716,6 +716,49 @@ form textarea{
     }
 }
 
+/* blog info card start */
+
+.infoSliderCard{
+    background: rgba( 255, 255, 255, 0.25 );
+    border-radius: 20px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+
+.infoSliderCard p{
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.infoSliderCard p a{
+    font-size: 1.5rem;
+}
+
+.infoSliderCard p a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 640px){
+    .infoSliderCard{
+        width: 340px;
+    }
+
+    .infoSliderCard p{
+        font-size: 1.3rem;
+        padding: 5px 15px;
+    }
+
+    .infoSliderCard p a{
+        font-size: 1rem;
+    }
+}
+
+/* blog info card end */
+
 
 
 /* blog title ends here */
@@ -727,7 +770,7 @@ form textarea{
     background: #000;
     width: 100%;
     height: 100%;
-    opacity: 50%;
+    opacity: 20%;
 }
 
 /* for manual navigation */
@@ -738,6 +781,7 @@ form textarea{
     margin-top: -40px;
     display: flex;
     justify-content: center;
+    z-index: 3;
 }
 
 .manual-btn{

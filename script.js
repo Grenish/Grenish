@@ -1,9 +1,13 @@
+// hamburger menu 
+
 const toggleButton = document.getElementsByClassName('toggleButton')[0]
 const indexLink = document.getElementsByClassName('indexLink')[0]
 
 toggleButton.addEventListener('click', ()=>{
     indexLink.classList.toggle('active')
 })
+
+// image slider for blog
 
 var counter = 1;
 setInterval(function(){
